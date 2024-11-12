@@ -1,7 +1,7 @@
-        plugins {
+plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-            id ("androidx.navigation.safeargs.kotlin")
+            alias(libs.plugins.safeargs.kotlin)
         }
 
 android {
@@ -38,11 +38,23 @@ android {
 
 dependencies {
     val navVersion = "2.7.0"
+    implementation("androidx.camera:camera-camera2:1.2.2")
+    implementation("androidx.camera:camera-lifecycle:1.2.2")
+    implementation("androidx.camera:camera-view:1.2.2")
 
     //NavComponent
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
 
+
+    // Fragment
+    implementation ("androidx.fragment:fragment-ktx:1.3.2")
+    // Activity
+    implementation ("androidx.activity:activity-ktx:1.2.2")
+    // ViewModel
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1")
+    // LiveData
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.3.1")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
