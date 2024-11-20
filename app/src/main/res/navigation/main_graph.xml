@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/firstFragment"
-        android:name="com.andres.navigationcomponentexample.FirstFragment"
+        android:name="com.andres.navigationcomponentexample.view.FirstFragment"
         android:label="fragment_first"
         tools:layout="@layout/fragment_first" >
         <action
@@ -15,10 +15,13 @@
             app:destination="@id/secondFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@animator/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_firstFragment_to_camera"
+            app:destination="@id/camera" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.andres.navigationcomponentexample.SecondFragment"
+        android:name="com.andres.navigationcomponentexample.view.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" >
         <action
@@ -32,7 +35,12 @@
 
     <fragment
         android:id="@+id/thirdFragment"
-        android:name="com.andres.navigationcomponentexample.ThirdFragment"
+        android:name="com.andres.navigationcomponentexample.view.ThirdFragment"
         android:label="fragment_third"
         tools:layout="@layout/fragment_third" />
+    <activity
+        android:id="@+id/camera"
+        android:name="com.andres.navigationcomponentexample.Camera"
+        android:label="activity_camera"
+        tools:layout="@layout/activity_camera" />
 </navigation>

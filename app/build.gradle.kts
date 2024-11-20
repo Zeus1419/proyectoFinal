@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
             alias(libs.plugins.safeargs.kotlin)
+    alias(libs.plugins.kotlin.kapt)
         }
 
 android {
@@ -44,6 +45,11 @@ dependencies {
     implementation("androidx.camera:camera-camera2:1.2.2")
     implementation("androidx.camera:camera-lifecycle:1.2.2")
     implementation("androidx.camera:camera-view:1.2.2")
+    //Room
+    implementation("androidx.room:room-ktx:2.6.1")
+    kapt("androidx.room:room-ktx:2.6.1")
+
+    kapt("androidx.room:room-compiler:2.6.1")
 
     //NavComponent
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")

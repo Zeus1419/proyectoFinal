@@ -1,4 +1,4 @@
-package com.andres.navigationcomponentexample
+package com.andres.navigationcomponentexample.view
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -10,11 +10,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import java.io.File
 import java.io.IOException

@@ -1,4 +1,4 @@
-package com.andres.navigationcomponentexample
+package com.andres.navigationcomponentexample.view
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -9,7 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import java.io.File
 
 // Adapter para mostrar los archivos de audio grabados
-class AudioAdapter(
+class
+AudioAdapter(
     private val context: Context,
     private val audioFiles: List<File>,
     private val onAudioSelected: (File) -> Unit // Acción al seleccionar un archivo
