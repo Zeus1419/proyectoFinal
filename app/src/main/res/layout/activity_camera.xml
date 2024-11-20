@@ -43,7 +43,7 @@
         app:layout_constraintStart_toStartOf="@+id/guideline32"
         app:layout_constraintTop_toTopOf="@+id/guideline28"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/img"
+        app:srcCompat="@drawable/img_1"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
