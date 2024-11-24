@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Room">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Campo para ingresar nombre a eliminar -->
+        <EditText
+            android:id="@+id/etNombreEliminar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del usuario a eliminar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_margin="16dp" />
+
+        <!-- Botón para eliminar usuario -->
+        <Button
+            android:id="@+id/btnEliminarUsuario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Eliminar Usuario"
+            app:layout_constraintTop_toBottomOf="@id/etNombreEliminar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_margin="16dp" />
+
+        <!-- Botón para eliminar todos los usuarios -->
+        <Button
+            android:id="@+id/btnEliminarTodos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Eliminar Todos"
+            app:layout_constraintTop_toBottomOf="@id/btnEliminarUsuario"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_margin="16dp" />
+        <Button
+            android:id="@+id/btnEditarUsuario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Editar usuario"
+            app:layout_constraintTop_toBottomOf="@id/btnEliminarTodos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_margin="16dp" />
+
+        <!-- ListView para mostrar usuarios -->
+        <ListView
+            android:id="@+id/lvUsers"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            app:layout_constraintTop_toBottomOf="@id/btnEditarUsuario"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="16dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -27,7 +27,16 @@ class FirstFragment : Fragment() {
             )
 
         }
+        val btnFormulario=root.findViewById<Button>(R.id.btnFormulario)
 
+        val btnRoom=root.findViewById<Button>(R.id.btnRoom)
+
+        btnRoom.setOnClickListener{
+            findNavController().navigate(R.id.action_firstFragment_to_room)
+        }
+        btnFormulario.setOnClickListener{
+            findNavController().navigate(R.id.action_firstFragment_to_formulario)
+        }
         return root
 
     }

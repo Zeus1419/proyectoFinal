@@ -15,6 +15,12 @@
             app:destination="@id/secondFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@animator/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_firstFragment_to_room"
+            app:destination="@id/room" />
+        <action
+            android:id="@+id/action_firstFragment_to_formulario"
+            app:destination="@id/formulario" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
@@ -35,4 +41,14 @@
         android:name="com.andres.navigationcomponentexample.ThirdFragment"
         android:label="fragment_third"
         tools:layout="@layout/fragment_third" />
+    <fragment
+        android:id="@+id/room"
+        android:name="com.andres.navigationcomponentexample.view.Room"
+        android:label="fragment_room"
+        tools:layout="@layout/fragment_room" />
+    <fragment
+        android:id="@+id/formulario"
+        android:name="com.andres.navigationcomponentexample.view.Formulario"
+        android:label="fragment_formulario"
+        tools:layout="@layout/fragment_formulario" />
 </navigation>
